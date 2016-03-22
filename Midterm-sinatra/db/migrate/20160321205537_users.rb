@@ -7,6 +7,7 @@ class Users < ActiveRecord::Migration
       u.string :email
       u.string :username
       u.string :password
+      u.string :repeat_password
       u.datetime :created_at
       u.datetime :updated_at
     end

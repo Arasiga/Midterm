@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20160321205537) do
     t.string   "email"
     t.string   "username"
     t.string   "password"
+    t.string   "repeat_password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

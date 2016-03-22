@@ -26,9 +26,15 @@
 
   <div class="box">
       <h1>Login</h1>
-      <input type="text" placeholder="Username"/>
-      <input type="text" placeholder="Password"/>
-      <button>Login</button>
+      <form method="post">
+      <% if @login_failed %>
+        <h5> Invalid username or password </h5>
+      <% end %>
+      
+      <input type="text" name="username" placeholder="Username"/>
+      <input type="password" name="password" placeholder="Password"/>
+      <input type="Submit" value="Login">
+      </form>
       <p>Not a member? <a href="/Webpages/Signup"><span>Sign Up</span></a></p>
       <p><a href="/Webpages/about"><span> About us</span></a></p>
     </div>
